@@ -1,33 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" data-lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>J.M. Plumbing Services | Plumbing, Siphoning &amp; Septic Tank Services in Samar</title>
+<meta name="description" content="J.M. Plumbing Services offers professional plumbing, declogging, Malabanan style siphoning and septic tank cleaning, repiping, fixture installation, repair and maintenance, and water leak detection for homes, businesses, and industrial properties in Eastern, Western, and Northern Samar (also available across Luzon &amp; Visayas). Fill out our online form for the fastest response, or call 0981-565-3271 / 0926-453-6717.">
+<meta name="keywords" content="Plumbing Services Samar, Septic Tank Cleaning Samar, Siphoning Services Samar, Malabanan Siphoning Samar, Declogging Services, Drainage Services, Water Leak Detection, Repiping Services, Residential Plumbing Philippines, Commercial Plumbing Philippines, Plumbing Services Luzon, Plumbing Services Visayas">
+<meta name="robots" content="index, follow">
+<!-- TODO: replace with your live domain -->
+<link rel="canonical" href="https://www.jmplumbingservices.com/">
 
-  <title>J.M. Plumbing Services | Plumbing, Siphoning &amp; Septic Tank Services in Samar</title>
-
-  <meta name="description" content="J.M. Plumbing Services offers professional plumbing, declogging, and septic tank siphoning services in Samar.">
-  <meta name="keywords" content="Plumbing Services Samar, Septic Tank Cleaning Samar, Siphoning">
-  <meta name="robots" content="index, follow">
-
-  <link rel="canonical" href="https://jmplumbingservices.netlify.app/">
-
-  <!-- Website Favicon / Logo -->
-<link rel="icon" type="image/png" href="./logo.png">
-<link rel="apple-touch-icon" href="./logo.png">
-
-<!-- SEO / Organization Logo -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "J.M. Plumbing Services",
-  "url": "https://jmplumbingservices.netlify.app/",
-  "logo": "https://jmplumbingservices.netlify.app/logo.png",
-  "image": "https://jmplumbingservices.netlify.app/logo.png"
-}
-</script>
-</head>
 <meta property="og:type" content="business.business">
 <meta property="og:title" content="J.M. Plumbing Services | Plumbing, Siphoning &amp; Septic Tank Services in Samar">
 <meta property="og:description" content="Fast, reliable, and professional plumbing, drainage, and septic tank solutions for residential, commercial, and industrial properties in Samar (also serving Luzon &amp; Visayas). Fill out our form for the fastest response.">
@@ -159,6 +141,12 @@
   }
   @media (min-width:900px){
     .header-tagline{padding:0 24px;}
+  }
+  .header-tagline .htag-main{
+    display:inline-flex;align-items:center;
+    background:rgba(62,134,214,0.15);border:1px solid rgba(62,134,214,0.4);
+    color:#BFDCFA;padding:6px 16px;border-radius:30px;
+    font-size:clamp(10px,1.4vw,12.5px);letter-spacing:.14em;white-space:nowrap;
   }
 
   .logo{display:flex;align-items:center;gap:10px;flex-shrink:0;}
@@ -448,7 +436,10 @@
   .offer-badge{
     display:inline-block;background:var(--blue-light);color:#fff;font-weight:700;font-size:12px;
     letter-spacing:.06em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:14px;
+    font-family:'Inter',sans-serif;
   }
+  button.offer-badge{cursor:pointer;transition:filter .2s var(--ease), transform .2s var(--ease), box-shadow .2s var(--ease);}
+  button.offer-badge:hover{filter:brightness(1.08);transform:translateY(-1px);box-shadow:0 6px 16px rgba(62,134,214,0.35);}
   .offer-title{
     font-family:'Sora',sans-serif;font-weight:800;font-size:26px;color:#fff;margin-bottom:10px;position:relative;
   }
@@ -468,6 +459,20 @@
   .offer-point-text ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px;}
   .offer-point-text li{line-height:1.45;}
   .offer-card .btn{position:relative;}
+  .offer-card-mini{
+    padding:10px 18px !important;display:flex;align-items:center;justify-content:center;
+    width:fit-content;max-width:100%;margin:0 auto;border-radius:999px;cursor:pointer;
+    transition:filter .2s var(--ease), transform .2s var(--ease), box-shadow .2s var(--ease);
+  }
+  .offer-card-mini:hover{filter:brightness(1.08);transform:translateY(-1px);box-shadow:0 6px 16px rgba(62,134,214,0.35);}
+  .offer-card-mini::before{display:none;}
+  .offer-card-mini .offer-badge{margin-bottom:0;}
+  #offer.section{padding:24px 0;}
+  .offer-hint{
+    font-family:'Inter',sans-serif;font-size:12.5px;font-weight:600;color:var(--silver);
+    letter-spacing:.02em;animation:offerHintPulse 2s ease-in-out infinite;
+  }
+  @keyframes offerHintPulse{0%,100%{opacity:.65;}50%{opacity:1;}}
   @media (max-width:480px){
     .offer-card{padding:28px 20px;}
     .offer-title{font-size:21px;}
@@ -674,7 +679,7 @@
 
   /* Testimonials trigger + modal */
   .testi-trigger{
-    display:block;width:100%;background:none;border:none;padding:0;text-align:left;cursor:pointer;
+    display:block;width:100%;background:none;border:none;padding:0;text-align:center;cursor:pointer;
   }
   .testi-trigger:hover .testi-trigger-cta{color:var(--navy);}
   .testi-trigger:hover .testi-trigger-cta svg{transform:translateX(3px);}
@@ -684,7 +689,7 @@
   }
   .testi-trigger-cta svg{width:16px;height:16px;transition:transform .2s var(--ease);}
   .testi-names{
-    display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:12px;
+    display:flex;flex-wrap:wrap;justify-content:center;gap:6px 16px;margin-top:12px;
   }
   .testi-names span{font-size:13.5px;font-weight:700;color:var(--navy);}
   .testi-modal-box{
@@ -694,6 +699,14 @@
   @media (max-width:600px){
     .testi-modal-box{padding:24px 18px;}
   }
+
+  .offer-modal-box{
+    background:linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%);
+  }
+  .offer-modal-box .modal-close{background:rgba(255,255,255,0.12);color:#fff;}
+  .offer-modal-box .offer-media,
+  .offer-modal-box .offer-grid{position:relative;}
+  .offer-modal-box .offer-badge{margin-top:6px;}
 
   ::selection{background:var(--blue-light);color:#fff;}
   :focus-visible{outline:2.5px solid var(--blue-light);outline-offset:2px;}
@@ -716,8 +729,7 @@
     </div>
 
     <div class="header-tagline">
-      <span class="htag-main" data-i18n="htag_main">MORE THAN <span class="htag-accent">PLUMBING</span>. COMPLETE SERVICE.</span>
-      <span class="htag-sub" data-i18n="htag_sub">Siphoning • Septic Tank • Declogging • Plumbing • Repiping &amp; More</span>
+      <span class="htag-main" data-i18n="htag_malabanan">MALABANAN</span>
     </div>
 
     <nav class="main-nav">
@@ -760,8 +772,8 @@
   <div class="container hero-grid">
     <div>
       <div class="hero-badge reveal"><span class="dot"></span> <span data-i18n="hero_badge">Now serving Eastern, Western &amp; Northern Samar</span></div>
-      <h1 class="reveal" data-i18n="hero_title">Declogging, Malabanan Siphoning and Plumbing Services.</h1>
-      <p class="sub reveal" data-i18n="hero_sub">Fast, reliable, and professional plumbing solutions for residential, commercial, and industrial properties in Eastern, Western, and Northern Samar.</p>
+      <h1 class="reveal" data-i18n="hero_title">Reliable Declogging, Siphoning &amp; Plumbing Services in Samar</h1>
+      <p class="sub reveal" data-i18n="hero_sub">Need a plumber? We provide fast drain cleaning, septic tank siphoning, and plumbing services for homes and businesses.</p>
 
       <div class="hero-ctas reveal">
         <a href="#contact" class="btn btn-primary js-go-to-form" id="heroFormBtn">
@@ -881,30 +893,40 @@
 <!-- ================= SPECIAL OFFER ================= -->
 <section class="section" id="offer">
   <div class="container">
-    <div class="offer-card reveal">
-      <div class="offer-media">
+    <div class="offer-card offer-card-mini reveal" id="offerTriggerBtn" role="button" tabindex="0" aria-label="Special Offer, tap to see the offer">
+      <div style="display:flex;align-items:center;gap:10px;">
         <span class="offer-badge" data-i18n="offer_badge">Special Offer</span>
-        <h3 class="offer-title" data-i18n="offer_title">Lusong Service <span>(Manual Deep Cleaning)</span></h3>
-        <p class="offer-desc" data-i18n="offer_desc">A budget-friendly manual scrubbing and scraping service performed after siphoning to completely clear out remaining dirt and residue.</p>
+        <span class="offer-hint" data-i18n="offer_hint">Tap to see the offer</span>
       </div>
-      <div class="offer-grid">
-        <div class="offer-point">
-          <div class="offer-point-label" data-i18n="offer_function_l">Function</div>
-          <div class="offer-point-text" data-i18n="offer_function">Thoroughly scrapes and removes hardened sludge, thick crusts, and stubborn grease from the bottom and walls—targeting areas standard vacuum pumps cannot reach.</div>
-        </div>
-        <div class="offer-point">
-          <div class="offer-point-label" data-i18n="offer_benefit_l">Benefit</div>
-          <div class="offer-point-text" data-i18n="offer_benefit"><ul><li><strong>Restores Maximum Tank Capacity:</strong> Frees up space by removing compressed bottom waste.</li><li><strong>Eliminates Deep-Seated Odors:</strong> Removes the old layers of residue causing persistent bad smells.</li><li><strong>Extends Service Intervals:</strong> Delays your next scheduled maintenance by ensuring a 100% empty tank.</li></ul></div>
-        </div>
-        <div class="offer-point">
-          <div class="offer-point-label" data-i18n="offer_pricing_l">Pricing</div>
-          <div class="offer-point-text" data-i18n="offer_pricing">A small add-on fee—giving you a cleaner, fresher, and significantly longer-lasting septic tank.</div>
-        </div>
-      </div>
-      <a href="#contact" class="btn btn-primary js-go-to-form" data-i18n="offer_cta">Ask About This Offer</a>
     </div>
   </div>
 </section>
+
+<div class="modal-overlay" id="offerModal">
+  <div class="modal-box testi-modal-box offer-modal-box">
+    <button class="modal-close" id="offerModalCloseBtn" aria-label="Close">&#10005;</button>
+    <div class="offer-media">
+      <span class="offer-badge" data-i18n="offer_badge">Special Offer</span>
+      <h3 class="offer-title" data-i18n="offer_title">Lusong Service <span>(Manual Deep Cleaning)</span></h3>
+      <p class="offer-desc" data-i18n="offer_desc">A budget-friendly manual scrubbing and scraping service performed after siphoning to completely clear out remaining dirt and residue.</p>
+    </div>
+    <div class="offer-grid">
+      <div class="offer-point">
+        <div class="offer-point-label" data-i18n="offer_function_l">Function</div>
+        <div class="offer-point-text" data-i18n="offer_function">Thoroughly scrapes and removes hardened sludge, thick crusts, and stubborn grease from the bottom and walls—targeting areas standard vacuum pumps cannot reach.</div>
+      </div>
+      <div class="offer-point">
+        <div class="offer-point-label" data-i18n="offer_benefit_l">Benefit</div>
+        <div class="offer-point-text" data-i18n="offer_benefit"><ul><li><strong>Restores Maximum Tank Capacity:</strong> Frees up space by removing compressed bottom waste.</li><li><strong>Eliminates Deep-Seated Odors:</strong> Removes the old layers of residue causing persistent bad smells.</li><li><strong>Extends Service Intervals:</strong> Delays your next scheduled maintenance by ensuring a 100% empty tank.</li></ul></div>
+      </div>
+      <div class="offer-point">
+        <div class="offer-point-label" data-i18n="offer_pricing_l">Pricing</div>
+        <div class="offer-point-text" data-i18n="offer_pricing">A small add-on fee—giving you a cleaner, fresher, and significantly longer-lasting septic tank.</div>
+      </div>
+    </div>
+    <a href="#contact" class="btn btn-primary js-go-to-form" data-i18n="offer_cta">Ask About This Offer</a>
+  </div>
+</div>
 
 <!-- ================= SERVICE TYPES / ABOUT ================= -->
 <section class="section" id="about">
@@ -1304,9 +1326,10 @@
       call_now:"Call Now", cta_request:"Request Service", prefer_call:"Prefer to call instead?", message_us:"Message Us on Facebook", email_us:"Email Us", msg_fb:"Message on Facebook",
       hero_badge:"Now serving Eastern, Western & Northern Samar",
       htag_main:"MORE THAN <span class=\"htag-accent\">PLUMBING</span>. COMPLETE SERVICE.",
+      htag_malabanan:"MALABANAN",
       htag_sub:"Siphoning • Septic Tank • Declogging • Plumbing • Repiping &amp; More",
-      hero_title:"Declogging, Malabanan Siphoning and Plumbing Services.",
-      hero_sub:"Fast, reliable, and professional plumbing, drainage, and septic tank solutions for residential, commercial, and industrial properties in Eastern, Western, and Northern Samar.",
+      hero_title:"Reliable Declogging, Siphoning &amp; Plumbing Services in Samar",
+      hero_sub:"Need a plumber? We provide fast drain cleaning, septic tank siphoning, and plumbing services for homes and businesses.",
       trust_line:"Fast, Reliable, Guaranteed Service!",
       hero_call_nudge:"Prefer to call instead? Tap here for our numbers.",
       pc_row1_t:"Fast Response", pc_row1_s:"Prompt scheduling across Samar",
@@ -1321,6 +1344,7 @@
       svc6_t:"Water Leak Detection", svc6_s:"Find and address leaks before they cause costly damage.",
       svc_sulong_t:"Lusong Service (Extended Care)",
       offer_badge:"Special Offer",
+      offer_hint:"Tap to see the offer",
       offer_title:"Lusong Service <span>(Manual Deep Cleaning)</span>",
       offer_desc:"A budget-friendly manual scrubbing and scraping service performed after siphoning to completely clear out remaining dirt and residue.",
       offer_function_l:"Function", offer_function:"Thoroughly scrapes and removes hardened sludge, thick crusts, and stubborn grease from the bottom and walls—targeting areas standard vacuum pumps cannot reach.",
@@ -1364,13 +1388,14 @@
     },
     fil:{
       brand_sub:"Services",
-      nav_home:"Home", nav_services:"Mga Serbisyo", nav_about:"Tungkol Sa Amin", nav_areas:"Saklaw na Lugar", nav_contact:"Contact",
+      nav_home:"Home", nav_services:"Mga Serbisyo", nav_about:"Tungkol Sa Amin", nav_areas:"Saklaw na Lugar", nav_contact:"Makipag-ugnayan",
       call_now:"Tumawag Ngayon", cta_request:"Humiling ng Serbisyo", prefer_call:"Gusto mo bang tumawag na lang?", message_us:"Mag-message sa Facebook", email_us:"I-email Kami", msg_fb:"Mag-message sa Facebook",
       hero_badge:"Naglilingkod na sa Eastern, Western at Northern Samar",
       htag_main:"HIGIT PA SA <span class=\"htag-accent\">PLUMBING</span>. KUMPLETONG SERBISYO.",
+      htag_malabanan:"MALABANAN",
       htag_sub:"Siphoning • Septic Tank • Declogging • Plumbing • Repiping at Higit Pa",
-      hero_title:"Declogging, Malabanan Siphoning, at Serbisyong Plumbing.",
-      hero_sub:"Mabilis, maaasahan, at propesyonal na solusyon sa plumbing, drainage, at septic tank para sa mga tahanan, negosyo, at industriyal na lugar sa Eastern, Western, at Northern Samar.",
+      hero_title:"Maaasahang Declogging, Siphoning &amp; Plumbing Services sa Samar",
+      hero_sub:"Kailangan ng plumber? Nagbibigay kami ng mabilis na paglilinis ng drainage, septic tank siphoning, at plumbing services para sa tahanan at negosyo.",
       trust_line:"Mabilis, Maaasahan, Garantisadong Serbisyo!",
       hero_call_nudge:"Gusto mo bang tumawag na lang? Pindutin dito para sa aming mga numero.",
       pc_row1_t:"Mabilis na Tugon", pc_row1_s:"Agarang iskedyul sa buong Samar",
@@ -1380,14 +1405,15 @@
       svc1_t:"Plumbing Services", svc1_s:"Pangkalahatang trabaho sa plumbing para sa tahanan, opisina, at industriyal na lugar.",
       svc2_t:"Declogging Services", svc2_s:"Mabilis at masusing paglilinis ng barado na drainage at tubo.",
       svc3_t:"Repiping", svc3_s:"Palitan ang lumang o sirang tubo ng bagong matibay na linya.",
-      svc4_t:"Installation", svc4_s:"Tamang pag-install ng fixtures, linya, at plumbing system.",
-      svc5_t:"Repair &amp; Maintenance", svc5_s:"Regular na pangangalaga para sa maayos na plumbing system.",
-      svc6_t:"Water Leak Detection", svc6_s:"Hanapin at ayusin agad ang mga tagas bago ito magdulot ng malaking pinsala.",
-      svc_sulong_t:"Lusong Service (Extended Care)",
+      svc4_t:"Pag-install ng Fixtures", svc4_s:"Tamang pag-install ng fixtures, linya, at plumbing system.",
+      svc5_t:"Pagkukumpuni at Maintenance", svc5_s:"Regular na pangangalaga para sa maayos na plumbing system.",
+      svc6_t:"Pagtukoy ng Tagas ng Tubig", svc6_s:"Hanapin at ayusin agad ang mga tagas bago ito magdulot ng malaking pinsala.",
+      svc_sulong_t:"Lusong Service (Karagdagang Alaga)",
       offer_badge:"Espesyal na Alok",
+      offer_hint:"Pindutin para makita ang alok",
       offer_title:"Lusong Service <span>(Manual na Deep Cleaning)</span>",
       offer_desc:"Isang murang serbisyo ng manual na pagkuskos at pag-iskrap pagkatapos ng siphoning, para lubusang tanggalin ang natitirang dumi at latak.",
-      offer_function_l:"Function", offer_function:"Maigting na kinukuskos at inaalis ang tigas na latak, makapal na kayumangging crust, at matigas na grasa sa ilalim at sa mga dingding ng tangke — sa mga bahaging hindi maabot ng karaniwang vacuum pump.",
+      offer_function_l:"Silbi", offer_function:"Maigting na kinukuskos at inaalis ang tigas na latak, makapal na kayumangging crust, at matigas na grasa sa ilalim at sa mga dingding ng tangke — sa mga bahaging hindi maabot ng karaniwang vacuum pump.",
       offer_benefit_l:"Benepisyo", offer_benefit:"<ul><li><strong>Naibabalik ang Pinakamalaking Kapasidad ng Tangke:</strong> Nagbibigay ng mas malaking espasyo sa pamamagitan ng pag-alis ng nag-iipong dumi sa ilalim.</li><li><strong>Tinatanggal ang Matagal nang Amoy:</strong> Inaalis ang mga lumang layer ng latak na sanhi ng patuloy na masangsang na amoy.</li><li><strong>Mas Matagal na Pagitan ng Serbisyo:</strong> Naiaantala ang susunod mong iskedyul ng maintenance dahil sa 100% kalinisan ng tangke.</li></ul>",
       offer_pricing_l:"Presyo", offer_pricing:"Maliit na dagdag na bayad lang — kapalit ay mas malinis, mas sariwa, at mas matagal na septic tank.",
       offer_cta:"Magtanong Tungkol Dito",
@@ -1413,7 +1439,7 @@
       lbl_phone:"Telepono", lbl_email:"Email", lbl_fb:"Facebook",
       form_priority_badge:"Pinakamabilis na Paraan ng Tulong",
       form_title:"Humiling ng Serbisyo", form_sub:"Punan ang form sa ibaba at makikipag-ugnayan kami agad sa inyo — ito ang pinakamabilis na paraan para maabot ang aming team.",
-      lbl_name:"Buong Pangalan", lbl_phone_num:"Numero ng Telepono", lbl_email_addr:"Email Address", lbl_location:"Lokasyon", lbl_service:"Kailangang Serbisyo", lbl_service_date:"Gustong Petsa ng Serbisyo", lbl_message:"Mensahe",
+      lbl_name:"Buong Pangalan", lbl_phone_num:"Numero ng Telepono", lbl_email_addr:"Email", lbl_location:"Lokasyon", lbl_service:"Kailangang Serbisyo", lbl_service_date:"Gustong Petsa ng Serbisyo", lbl_message:"Mensahe",
       opt_select:"Pumili ng serbisyo", opt_other:"Iba pa", lbl_optional:"(opsyonal)",
       err_name:"Pakilagay ang iyong buong pangalan.", err_phone:"Pakilagay ang tamang numero ng telepono.",
       err_email:"Pakilagay ang tamang email address.",
@@ -1422,7 +1448,7 @@
       form_submit:"Humiling ng Serbisyo",
       form_success:"Salamat, naisumite na ang inyong kahilingan. Makikipag-ugnayan kami sa inyo sa lalong madaling panahon.",
       footer_tagline:"Maaasahang Plumbing, Drainage at Septic Services sa Buong Samar",
-      footer_contact_h:"Contact",
+      footer_contact_h:"Makipag-ugnayan",
       footer_rights:"© 2026 J.M Plumbing Services. Lahat ng Karapatan ay Nakalaan.",
       modal_title:"Kailangan ng Tulong sa Plumbing o Septic Tank?"
     }
@@ -1514,6 +1540,17 @@
   document.getElementById("testiModalCloseBtn").addEventListener("click", closeTestiModal);
   testiModal.addEventListener("click", function(e){ if(e.target === testiModal) closeTestiModal(); });
   document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeTestiModal(); });
+
+  /* ---------------- Special Offer modal ---------------- */
+  var offerModal = document.getElementById("offerModal");
+  function openOfferModal(){ offerModal.classList.add("open"); }
+  function closeOfferModal(){ offerModal.classList.remove("open"); }
+  var offerTriggerBtn = document.getElementById("offerTriggerBtn");
+  offerTriggerBtn.addEventListener("click", openOfferModal);
+  offerTriggerBtn.addEventListener("keydown", function(e){ if(e.key === "Enter" || e.key === " "){ e.preventDefault(); openOfferModal(); } });
+  document.getElementById("offerModalCloseBtn").addEventListener("click", closeOfferModal);
+  offerModal.addEventListener("click", function(e){ if(e.target === offerModal) closeOfferModal(); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeOfferModal(); });
 
   /* ---------------- Booking modal (shown before Call / Email / Facebook actions) ---------------- */
   var BOOKING_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbziSqB7tbGs8WVRHskUVKoK3tztXQ3LNT1cyIvjknQfEdAUuEx0a4anu7xePLT_LdT5/exec";
